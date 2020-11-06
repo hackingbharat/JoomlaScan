@@ -11,25 +11,16 @@ A free and open source software to find the components installed in Joomla CMS, 
 * Connection timeout
 
 # Next Features
+* Multi Thread (It is the main work to be done, with more than 600 components the research has become slow.)
 * Locate the version of Joomla CMS
 * Find Module
-* Customized User Agent and Random Agent
+* Customized User Agent or Random Agent
 * The user can change the connection timeout
 * A database of vulnerable components
 
 # Usage
 
-usage: python joomlascan.py [-h] [-u URL] [-t THREADS] [-v]
-
-optional arguments:
-
-    -h, --help              show this help message and exit
- 
-    -u URL, --url URL       The Joomla URL/domain to scan.
-    -t THREADS, --threads   THREADS
-                            The number of threads to use when multi-threading
-                            requests (default: 10).
-    -v, --version           show program's version number and exit
+$ python joomlascan.py -u http://www.targetsite.com
 
 # Screenshot
 
@@ -41,7 +32,6 @@ optional arguments:
 
 # Changelog
 
-* 2016.12.12 0.5beta > Implementation of the Multi Thread, Updated database from 656 to 686 components, Fix Cosmetics and Minor Fix.
 * 2016.05.20 0.4beta > Find README.md, Find Manifes.xml, Find Index file of Components (Only if descriptive), User Agent and TimeOut on Python Request, Updated database from 587 to 656 components, Fix Cosmetics and Minor Fix.
 * 2016.03.18 0.3beta > Find index file on components directory
 * 2016.03.14 0.2beta > Find administrator components and file Readme, Changelog, License.
@@ -49,4 +39,3 @@ optional arguments:
 
 # License
 GNU, version 3
-
